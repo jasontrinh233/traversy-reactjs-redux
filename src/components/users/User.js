@@ -61,7 +61,9 @@ export class User extends Component {
                      style={{ width: "150px" }}
                   />
                   <h1>{name}</h1>
-                  <p>Location: {location}</p>
+                  <p>
+                     <i class="fas fa-map-marker-alt"></i> {location}
+                  </p>
                </div>
                <div>
                   {bio && (
@@ -108,7 +110,6 @@ export class User extends Component {
                   Public Gists: {public_gists}
                </div>
             </div>
-            
             <Repos repos={repos} />
          </Fragment>
       );
